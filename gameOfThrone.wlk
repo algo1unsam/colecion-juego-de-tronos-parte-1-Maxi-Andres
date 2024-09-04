@@ -1,54 +1,43 @@
-// Daenerys
-object dan{
-    const property artefactos = #{}
-    var property capacidad = 2
-    const property listaHistorial = []
+object dany {
+  const property artefactos = #{}
+  var property capacidad = 2
+  var property historial = []
 
-    // declaro los artefactos
-    method artefactos(elemento) {
-      if (artefactos.size() < 2) {
-        artefactos.add(elemento)
-        listaHistorial.add(elemento)
-      }
-      else return false
-    }
+  method encuentra(cosa) {
+    if (artefactos.size() < capacidad){
+      artefactos.add(cosa)
+    } // si no tiene espacio no hace falta que devuelva algo que diga "dany no tiene espacio" esto es paradigma de objetos
+    historial.add(cosa)
+  }
 
-    // limpio artefactos
-    method borrar() {
-      artefactos.clear()
-    }
+  method guardar() {
+    self.artefactos().clear()
+  }
 
-    // Saber los artefactos de Daenerys
-    method cantidad() = artefactos.size()
-    method objetos() = artefactos
-    method objetoEspecial(elemento) = self.posesiones().contains(elemento)
-    method posesiones() = artefactos + rocaDragon.baul()
-    // = es lo mismo que return
-
-    // Saber la historia de los encuentros con los artefactos
-    method historial() = self.listaHistorial()
-
+  method posesion() = self.artefactos() + rocaDragon.baul()
+  method historia() = historial
 }
-// RocaDragón
+
+
 object rocaDragon {
-    var property baul = #{} // = castillo
+  var property baul = #{}
 
-    // guardo artefactos en el castillo 
-    method guardar() {
-        baul.addAll(dan.artefactos())
-        dan.borrar()
-    }
+  method llegar() { // podrias poner como hace el profe llegar(lugar) y en vez de baul. pones lugar. es mas generico pero lo tendrias que poner en el objeto dany
+    baul.addAll(dany.artefactos())
+    dany.guardar()
+  }
+  
 }
 
-// Objetos 
-object espada {
 
+object espada {
+  
 }
 object libro {
   
 }
 object collar {
-  
+
 }
 object armadura {
   

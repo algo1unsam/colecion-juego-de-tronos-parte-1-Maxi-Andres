@@ -17,6 +17,7 @@ Al principio, **Daenerys** solo puede llevar hasta 2 artefactos a la vez, pero s
 Cada vez que Daenerys se encuentra con un artefacto, y tiene capacidad para llevarlo, lo levanta.
 
 ### Ejemplo:
+
 1. Daenerys encuentra la Espada de Dragón (la agarra).
 2. Daenerys encuentra el Libro de Magia Ancestral (lo agarra).
 3. Daenerys encuentra el Collar de Fuego (no lo agarra, ya que tiene la espada y el libro encima y su capacidad es de 2).
@@ -27,6 +28,7 @@ Cada vez que Daenerys se encuentra con un artefacto, y tiene capacidad para llev
 Cuando **Daenerys** llega a Rocadragón, guarda en ella todos los artefactos que lleva encima, liberando espacio para poder levantar nuevos.
 
 ### Ejemplo:
+
 1. Daenerys encuentra la Espada de Dragón (la agarra).
 2. Daenerys encuentra el Libro de Magia Ancestral (lo agarra).
 3. Daenerys llega a Rocadragón (deja en la fortaleza la espada y el libro de magia).
@@ -39,7 +41,8 @@ Hay dos preguntas interesantes que debe poder contestar **Daenerys**: por un lad
 
 También se quiere preguntar si posee un artefacto en especial.
 
-### Ejemplo:  
+### Ejemplo:
+
 Si la fortaleza tiene el collar y la espada, y **Daenerys** tiene la armadura, entonces Daenerys posee el collar, la espada, y la armadura.  
 El libro no lo posee.
 
@@ -58,11 +61,8 @@ Se desea saber el orden en que **Daenerys** fue encontrándose con los artefacto
 
 Si consultamos la historia de encuentros con los artefactos, debería ser:
 
-1. Espada de Dragón  
-2. Libro de Magia Ancestral  
-3. Collar de Fuego  
-4. Armadura de Acero Valyrio  
+1. Espada de Dragón
+2. Libro de Magia Ancestral
+3. Collar de Fuego
+4. Armadura de Acero Valyrio
 5. Collar de Fuego (¡de nuevo!)
-
-
-
